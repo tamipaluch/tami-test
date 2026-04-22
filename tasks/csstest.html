@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <title>Práctica CSS</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+<body>
+  <header id="main-header" class="header">
+    <h1 class="title">Mi Proyecto Web</h1>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#" class="nav-link">Inicio</a></li>
+        <li><a href="#" class="nav-link active">Servicios</a></li>
+        <li><a href="#" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <article class="post featured">
+      <h2 class="post-title">Artículo Destacado</h2>
+      <p class="post-text">Este es un texto de ejemplo para practicar selectores y especificidad.</p>
+      <img src="../assets/srilankatrain.webp" alt="Tren en Sri Lanka" class="post-image" />
+    </article>
+
+    <article class="post">
+      <h2 class="post-title">Artículo Secundario</h2>
+      <p class="post-text">Otro texto para aplicar estilos CSS.</p>
+      <img srcset="../assets/srilankabeach.webp 400w, ../assets/srilankabeach.webp 800w" sizes="(max-width: 600px) 400px, 800px" src="../assets/srilankabeach.webp" alt="Playa en Sri Lanka" class="post-image" />
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Mi Proyecto Web</p>
+  </footer>
+</body>
+</html>

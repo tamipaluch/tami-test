@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optimización de Imágenes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    .imagen-optimizada {
+    max-width: 50%;
+    display: block;
+    margin: 10px auto;
+    }
+</style>
+<body>
+  <h1>Galería de Imágenes Optimizada</h1>
+  <!-- Aquí debes agregar las imágenes usando <picture> y srcset -->
+  <picture class="imagen-optimizada">
+    <!-- Ejemplo de imagen, reemplaza con tus imágenes -->
+    <source srcset="../assets/srilankatrain.webp" type="image/webp" media="(max-width: 600px)">
+    <source srcset="../assets/srilankabeach.webp" type="image/webp">
+    <img src="../assets/srilankabeach.webp" alt="Playa de Sri Lanka" loading="lazy">
+  </picture>
+</body>
+</html>
+

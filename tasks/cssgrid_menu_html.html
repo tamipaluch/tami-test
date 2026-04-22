@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Responsive con CSS Grid</title>
+  <style>
+    /* Layout móvil: una columna */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding:0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      font-size: 1.2em;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    @media (min-width: 600px) {
+        nav ul {
+            flex-wrap: nowrap;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <ul>    
+            <li class="item">Elemento 1</li>
+            <li class="item">Elemento 2</li>
+            <li class="item">Elemento 3</li>
+            <li class="item">Elemento 4</li>
+            <li class="item">Elemento 5</li>
+        </ul>
+    </nav>
+  </div>
+</body>
+</html>

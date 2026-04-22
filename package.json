@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@dialpad/dialtone-mcp-server": "^1.2.0"
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Responsivo</title>
+  <!-- Bootstrap CSS -->
+  <style>
+    /* Estilos base para Flexbox y media queries */
+    .portfolio-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .portfolio-item {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 0 0 30%;
+      max-width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 4px;
+      height: 200px;
+      width: 400px;
+      object-fit: cover;
+    }
+    .portfolio-item button {
+      margin-top: auto;
+    }
+    [aria-labelledby="item1-title"] { order: 2; };
+    [aria-labelledby="item2-title"] { order: 1; };
+    [aria-labelledby="item3-title"] { order: 3; };
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Paquetes de viajes</h1>
+    </header>
+    <main>
+        <section class="portfolio-section" aria-label="Sección de portafolio">
+            <!-- Aquí irán los items del portafolio -->
+            <article class="portfolio-item" role="region" aria-labelledby="item1-title">
+                <img src="../assets/elnido.jpg" alt="Laguna turquesa de El Nido" />
+                <h2 id="item1-title">3 semanas en Filipinas</h2>
+                <p>Sumergite en las aguas cristalinas de El Nido, explorá los arrozales de Banaue y descubrí la vibrante Manila.</p>
+                <button type="button" aria-label="Ver más sobre 3 semanas en Filipinas">Ver más</button>
+            </article>
+        <article class="portfolio-item" role="region" aria-labelledby="item2-title">
+            <img src="../assets/tenerife.jpg" alt="Paisaje volcánico del Teide en Tenerife" />
+            <h2 id="item2-title">1 semana en Tenerife</h2>
+            <p>Subí al Teide, relajate en las playas del sur y disfrutá de la gastronomía canaria en un destino de clima eterno.</p>
+            <button type="button" aria-label="Ver más sobre 1 semana en Tenerife">Ver más</button>
+        </article>
+            <article class="portfolio-item" role="region" aria-labelledby="item3-title">
+            <img src="../assets/tokyo.jpg" alt="Cruce peatonal en Tokyo" />
+            <h2 id="item3-title">10 días en Tokyo</h2>
+            <p>Explorá el cruce de Shibuya, descubrí los templos de Asakusa y deleitate con la gastronomía callejera de Shinjuku.</p>
+            <button type="button" aria-label="Ver más sobre 10 días en Tokyo">Ver más</button>
+        </article>
+        <article class="portfolio-item" role="region" aria-labelledby="item4-title">
+            <img src="../assets/machupicchu.jpg" alt="Paisaje panorámico de Machu Picchu" />
+            <h2 id="item4-title">7 días en Cusco</h2>
+            <p>Caminá por las calles empedradas del ombligo del mundo, visitá Machu Picchu y descubrí la cultura inca en su máxima expresión.</p>
+            <button type="button" aria-label="Ver más sobre 7 días en Cusco">Ver más</button>
+        </article>
+        <article class="portfolio-item" role="region" aria-labelledby="item5-title">
+            <img src="../assets/torresdelpaine.jpg" alt="Montañas de Torres del Paine" />
+            <h2 id="item5-title">4 días en Torres del Paine</h2>
+            <p>Hacé trekking entre glaciares y lagos turquesa, maravillate con los picos graníticos y conectá con la Patagonia más salvaje.</p>
+            <button type="button" aria-label="Ver más sobre 4 días en Torres del Paine">Ver más</button>
+        </article>
+        <article class="portfolio-item" role="region" aria-labelledby="item6-title">
+            <img src="../assets/grandcanyon.jpg" alt="Laguna en el Gran Cañón de Colorado" />
+            <h2 id="item6-title">2 días en Gran Cañón</h2>
+            <p>Asombrate con uno de los paisajes más imponentes del planeta, recorré sus senderos y contemplá millones de años de historia geológica.</p>
+            <button type="button" aria-label="Ver más sobre 2 días en el Gran Cañón">Ver más</button>
+        </article>        
+    </section>
+  </main>
+</body>
+</html>
